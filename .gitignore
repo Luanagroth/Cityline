@@ -3,6 +3,8 @@ node_modules/
 dist/
 build/
 coverage/
+.env
+.env.*
 .env.local
 .env.*.local
 *.log
@@ -19,3 +21,4 @@ apps/backend/*.db
 apps/backend/*.db-journal
 apps/backend/prisma/*.db
 apps/backend/prisma/*.db-journal
+apps/backend/.env
