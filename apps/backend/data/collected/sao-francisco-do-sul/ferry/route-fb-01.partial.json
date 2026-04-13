@@ -1,0 +1,116 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "portal-sao-chico-ferry",
+  "entityType": "ferry-route",
+  "data": {
+    "id": "collected-ferry-01",
+    "code": "FB-01",
+    "slug": "ferry-laranjeiras-vila-da-gloria",
+    "operator": "Ferry Boat Babitonga",
+    "routeLabel": "Laranjeiras - Vila da Gloria",
+    "originLabel": "Laranjeiras",
+    "destinationLabel": "Vila da Gloria",
+    "summary": "Travessia publica entre Laranjeiras e Vila da Gloria.",
+    "fares": [
+      {
+        "id": "collected-ferry-01-fare-1",
+        "label": "Pedestre",
+        "riderCategory": "pedestrian",
+        "amountText": "R$ 3,20",
+        "amountCents": 320,
+        "currency": "BRL",
+        "appliesTo": "ferry",
+        "source": {
+          "sourceId": "portal-sao-chico-ferry",
+          "sourceName": "Portal Sao Chico Turismo - Ferry Boat",
+          "sourceUrl": "https://portalsaochicoturismo.com.br/ferry-boat/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "FB-01"
+        }
+      },
+      {
+        "id": "collected-ferry-01-fare-2",
+        "label": "Carro",
+        "riderCategory": "car",
+        "amountText": "R$ 24,00",
+        "amountCents": 2400,
+        "currency": "BRL",
+        "appliesTo": "ferry",
+        "source": {
+          "sourceId": "portal-sao-chico-ferry",
+          "sourceName": "Portal Sao Chico Turismo - Ferry Boat",
+          "sourceUrl": "https://portalsaochicoturismo.com.br/ferry-boat/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "FB-01"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-ferry-01-outbound",
+        "type": "outbound",
+        "name": "Laranjeiras -> Vila da Gloria",
+        "routeLabel": "Laranjeiras -> Vila da Gloria",
+        "originLabel": "Laranjeiras",
+        "destinationLabel": "Vila da Gloria",
+        "mapPath": [
+          { "sequence": 1, "lat": -26.2760, "lng": -48.6728 },
+          { "sequence": 2, "lat": -26.2500, "lng": -48.6880 },
+          { "sequence": 3, "lat": -26.2230, "lng": -48.7035 },
+          { "sequence": 4, "lat": -26.1791, "lng": -48.7247 }
+        ],
+        "stops": [
+          {
+            "id": "collected-ferry-stop-1",
+            "name": "Trapiche Laranjeiras",
+            "sequence": 1,
+            "location": { "lat": -26.2760, "lng": -48.6728 },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-ferry-stop-2",
+            "name": "Trapiche Vila da Gloria",
+            "sequence": 2,
+            "location": { "lat": -26.1791, "lng": -48.7247 },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-ferry-01-weekday-0700",
+            "serviceDay": "weekday",
+            "departureTime": "07:00",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-ferry-01-weekday-0800",
+            "serviceDay": "weekday",
+            "departureTime": "08:00",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "portal-sao-chico-ferry",
+          "sourceName": "Portal Sao Chico Turismo - Ferry Boat",
+          "sourceUrl": "https://portalsaochicoturismo.com.br/ferry-boat/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "FB-01",
+          "sourceDirectionRef": "outbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "portal-sao-chico-ferry",
+      "sourceName": "Portal Sao Chico Turismo - Ferry Boat",
+      "sourceUrl": "https://portalsaochicoturismo.com.br/ferry-boat/",
+      "collectedAt": "2026-04-10T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "FB-01"
+    }
+  }
+}

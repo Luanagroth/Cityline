@@ -1,0 +1,216 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum TransportMode {
+  MUNICIPAL
+  INTERMUNICIPAL
+  FERRY
+}
+
+enum ServiceDayType {
+  WEEKDAY
+  SATURDAY
+  SUNDAY
+  HOLIDAY
+}
+
+enum DirectionType {
+  OUTBOUND
+  INBOUND
+}
+
+enum LineOperationalStatus {
+  ON_TIME
+  ATTENTION
+  REDUCED
+}
+
+enum OccupancyLevel {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+model User {
+  id             String          @id @default(cuid())
+  name           String?
+  email          String          @unique
+  passwordHash   String
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  favorites      Favorite[]
+  savedLocations SavedLocation[]
+}
+
+model Favorite {
+  id        String   @id @default(cuid())
+  lineId    String
+  label     String?
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lineId])
+}
+
+model SavedLocation {
+  id        String   @id @default(cuid())
+  label     String?
+  latitude  Float
+  longitude Float
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model TransportLine {
+  id                       String                @id
+  code                     String
+  slug                     String                @unique
+  name                     String
+  operator                 String
+  summary                  String?
+  routeLabel               String
+  originLabel              String
+  destinationLabel         String
+  transportMode            TransportMode
+  operationalStatus        LineOperationalStatus @default(ON_TIME)
+  estimatedDurationMinutes Int?
+  distanceKm               Float?
+  fareSummary              String?
+  color                    String?
+  amenities                String
+  sourceUpdatedAt          DateTime?
+  isActive                 Boolean               @default(true)
+  createdAt                DateTime              @default(now())
+  updatedAt                DateTime              @updatedAt
+  directions               RouteDirection[]
+  fares                    Fare[]
+
+  @@unique([transportMode, code])
+  @@index([transportMode, isActive])
+}
+
+model RouteDirection {
+  id               String         @id
+  lineId           String
+  type             DirectionType
+  slug             String
+  name             String
+  routeLabel       String
+  originLabel      String
+  destinationLabel String
+  sortOrder        Int
+  isLoop           Boolean        @default(false)
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  line             TransportLine  @relation(fields: [lineId], references: [id], onDelete: Cascade)
+  lineStops        LineStop[]
+  routePaths       RoutePath[]
+  schedules        Schedule[]
+
+  @@unique([lineId, slug])
+  @@index([lineId, sortOrder])
+}
+
+model Stop {
+  id          String     @id
+  name        String
+  slug        String
+  latitude    Float
+  longitude   Float
+  description String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  lineStops   LineStop[]
+
+  @@index([slug])
+}
+
+model LineStop {
+  id                  String         @id
+  directionId         String
+  stopId              String
+  sequence            Int
+  distanceFromStartKm Float?
+  platform            String?
+  isTimingPoint       Boolean        @default(false)
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+  direction           RouteDirection @relation(fields: [directionId], references: [id], onDelete: Cascade)
+  stop                Stop           @relation(fields: [stopId], references: [id], onDelete: Restrict)
+  stopTimePredictions StopTimePrediction[]
+
+  @@unique([directionId, sequence])
+  @@index([stopId])
+}
+
+model Schedule {
+  id               String         @id
+  directionId      String
+  serviceDay       ServiceDayType
+  departureTime    String
+  departureMinutes Int
+  isPeak           Boolean        @default(false)
+  occupancy        OccupancyLevel @default(MEDIUM)
+  platform         String?
+  note             String?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  direction        RouteDirection @relation(fields: [directionId], references: [id], onDelete: Cascade)
+  stopTimePredictions StopTimePrediction[]
+
+  @@index([directionId, serviceDay, departureMinutes])
+}
+
+model StopTimePrediction {
+  id                String         @id
+  scheduleId        String
+  lineStopId        String
+  serviceDay        ServiceDayType
+  predictedTime     String
+  predictedMinutes  Int
+  sourceConfidence  String?
+  sourceCollectedAt DateTime?
+  note              String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  schedule          Schedule       @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
+  lineStop          LineStop       @relation(fields: [lineStopId], references: [id], onDelete: Cascade)
+
+  @@unique([scheduleId, lineStopId])
+  @@index([lineStopId, serviceDay, predictedMinutes])
+}
+
+model Fare {
+  id            String        @id
+  lineId        String
+  label         String
+  riderCategory String?
+  amountCents   Int?
+  currency      String        @default("BRL")
+  sortOrder     Int           @default(0)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  line          TransportLine @relation(fields: [lineId], references: [id], onDelete: Cascade)
+
+  @@index([lineId, sortOrder])
+}
+
+model RoutePath {
+  id          String         @id
+  directionId String
+  sequence    Int
+  latitude    Float
+  longitude   Float
+  createdAt   DateTime       @default(now())
+  direction   RouteDirection @relation(fields: [directionId], references: [id], onDelete: Cascade)
+
+  @@unique([directionId, sequence])
+}

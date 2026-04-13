@@ -1,0 +1,25 @@
+{
+  "name": "cityline-platform",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Monorepo do CityLine com frontend Next.js e backend Express para mobilidade urbana",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c cyan,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --workspace @cityline/frontend",
+    "dev:backend": "npm run dev --workspace @cityline/backend",
+    "build": "npm run build --workspace @cityline/shared && npm run build --workspace @cityline/backend && npm run build --workspace @cityline/frontend",
+    "lint": "npm run lint --workspace @cityline/backend && npm run lint --workspace @cityline/frontend",
+    "type-check": "npm run type-check --workspace @cityline/shared && npm run type-check --workspace @cityline/backend && npm run type-check --workspace @cityline/frontend",
+    "test": "npm run test --workspace @cityline/backend && npm run test --workspace @cityline/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20.10.0"
+  }
+}
