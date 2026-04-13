@@ -1,0 +1,225 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "dataset-verdes-mares-sfs-2026-04-10T12-00-00-000Z",
+      "createdAt": "2026-04-10T12:00:00.000Z",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "line-0100",
+        "code": "0100",
+        "slug": "0100-enseada-via-ubatuba",
+        "name": "Enseada via Ubatuba",
+        "operator": "Verdes Mares",
+        "summary": "Linha Centro - Enseada via Ubatuba",
+        "routeLabel": "Centro -> Enseada",
+        "originLabel": "Centro",
+        "destinationLabel": "Enseada",
+        "transportMode": "municipal",
+        "operationalStatus": "on-time",
+        "fareSummary": "Tarifa urbana municipal",
+        "amenities": [],
+        "sourceUpdatedAt": "2026-04-10T12:00:00.000Z",
+        "sourceLineRef": "0100",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "line-0100-outbound",
+        "lineId": "line-0100",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Saída do Centro",
+        "routeLabel": "Centro -> Enseada",
+        "originLabel": "Centro",
+        "destinationLabel": "Enseada",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      },
+      {
+        "id": "line-0100-inbound",
+        "lineId": "line-0100",
+        "type": "inbound",
+        "slug": "inbound",
+        "name": "Saída da Enseada",
+        "routeLabel": "Enseada -> Centro",
+        "originLabel": "Enseada",
+        "destinationLabel": "Centro",
+        "sortOrder": 1,
+        "isLoop": false,
+        "sourceDirectionRef": "inbound"
+      }
+    ],
+    "stops": [
+      {
+        "id": "stop-praca-dr-getulio-vargas-m26_2434-m48_6379",
+        "name": "Praça Dr. Getúlio Vargas",
+        "slug": "praca-dr-getulio-vargas",
+        "latitude": -26.243437512602945,
+        "longitude": -48.637910711972246
+      },
+      {
+        "id": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "name": "Ogmo SFS",
+        "slug": "ogmo-sfs",
+        "latitude": -26.24347278215267,
+        "longitude": -48.635064229915336
+      },
+      {
+        "id": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "name": "Antiga Multipaper (Sentido Centro/Bairro)",
+        "slug": "antiga-multipaper-sentido-centro-bairro",
+        "latitude": -26.244699006604957,
+        "longitude": -48.63466469668285
+      },
+      {
+        "id": "stop-carioca-bica-d-agua-m26_2466-m48_6355",
+        "name": "Carioca (Bica d'água)",
+        "slug": "carioca-bica-d-agua",
+        "latitude": -26.24659710935892,
+        "longitude": -48.63549497664863
+      },
+      {
+        "id": "stop-antiga-multipaper-sentido-bairro-centro-m26_2445-m48_6344",
+        "name": "Antiga Multipaper (Sentido Bairro/Centro)",
+        "slug": "antiga-multipaper-sentido-bairro-centro",
+        "latitude": -26.24448063883166,
+        "longitude": -48.634446201953615
+      }
+    ],
+    "lineStops": [
+      {
+        "id": "line-0100-outbound-stop-1",
+        "directionId": "line-0100-outbound",
+        "stopId": "stop-praca-dr-getulio-vargas-m26_2434-m48_6379",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0100-outbound-stop-2",
+        "directionId": "line-0100-outbound",
+        "stopId": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0100-outbound-stop-3",
+        "directionId": "line-0100-outbound",
+        "stopId": "stop-antiga-multipaper-sentido-centro-bairro-m26_2447-m48_6347",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0100-outbound-stop-4",
+        "directionId": "line-0100-outbound",
+        "stopId": "stop-carioca-bica-d-agua-m26_2466-m48_6355",
+        "sequence": 4,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0100-inbound-stop-1",
+        "directionId": "line-0100-inbound",
+        "stopId": "stop-carioca-bica-d-agua-m26_2466-m48_6355",
+        "sequence": 1,
+        "isTimingPoint": true
+      },
+      {
+        "id": "line-0100-inbound-stop-2",
+        "directionId": "line-0100-inbound",
+        "stopId": "stop-antiga-multipaper-sentido-bairro-centro-m26_2445-m48_6344",
+        "sequence": 2,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0100-inbound-stop-3",
+        "directionId": "line-0100-inbound",
+        "stopId": "stop-ogmo-sfs-m26_2435-m48_6351",
+        "sequence": 3,
+        "isTimingPoint": false
+      },
+      {
+        "id": "line-0100-inbound-stop-4",
+        "directionId": "line-0100-inbound",
+        "stopId": "stop-praca-dr-getulio-vargas-m26_2434-m48_6379",
+        "sequence": 4,
+        "isTimingPoint": false
+      }
+    ],
+    "schedules": [
+      {
+        "id": "collected-line-0100-outbound-weekday-0520",
+        "directionId": "line-0100-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "05:20",
+        "departureMinutes": 320,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0100-outbound-weekday-0745",
+        "directionId": "line-0100-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "07:45",
+        "departureMinutes": 465,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0100-outbound-weekday-1030",
+        "directionId": "line-0100-outbound",
+        "serviceDay": "weekday",
+        "departureTime": "10:30",
+        "departureMinutes": 630,
+        "isPeak": false,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0100-inbound-weekday-0600",
+        "directionId": "line-0100-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:00",
+        "departureMinutes": 360,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0100-inbound-weekday-0645",
+        "directionId": "line-0100-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "06:45",
+        "departureMinutes": 405,
+        "isPeak": true,
+        "occupancy": "medium"
+      },
+      {
+        "id": "collected-line-0100-inbound-weekday-0805",
+        "directionId": "line-0100-inbound",
+        "serviceDay": "weekday",
+        "departureTime": "08:05",
+        "departureMinutes": 485,
+        "isPeak": true,
+        "occupancy": "medium"
+      }
+    ],
+    "stopTimePredictions": [],
+    "routePaths": [],
+    "fares": [
+      {
+        "id": "collected-line-0100-fare-1",
+        "lineId": "line-0100",
+        "label": "Tarifa urbana municipal",
+        "currency": "BRL",
+        "sortOrder": 0
+      }
+    ],
+    "ferrySchedules": [],
+    "ferryFares": []
+  }
+}

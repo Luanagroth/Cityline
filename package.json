@@ -1,27 +1,25 @@
 {
-  "name": "todo-react-avancado",
+  "name": "cityline-platform",
+  "version": "2.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "Monorepo do CityLine com frontend Next.js e backend Express para mobilidade urbana",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "dev": "concurrently -n backend,frontend -c cyan,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --workspace @cityline/frontend",
+    "dev:backend": "npm run dev --workspace @cityline/backend",
+    "build": "npm run build --workspace @cityline/shared && npm run build --workspace @cityline/backend && npm run build --workspace @cityline/frontend",
+    "lint": "npm run lint --workspace @cityline/backend && npm run lint --workspace @cityline/frontend",
+    "type-check": "npm run type-check --workspace @cityline/shared && npm run type-check --workspace @cityline/backend && npm run type-check --workspace @cityline/frontend",
+    "test": "npm run test --workspace @cityline/backend && npm run test --workspace @cityline/frontend"
   },
   "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "vite": "^7.0.4"
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20.10.0"
   }
 }

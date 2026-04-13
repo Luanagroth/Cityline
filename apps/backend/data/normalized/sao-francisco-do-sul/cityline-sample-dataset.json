@@ -1,0 +1,129 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "dataset": {
+    "metadata": {
+      "datasetId": "cityline-sample-dataset-2026-04-10",
+      "createdAt": "2026-04-10T12:00:00.000Z",
+      "sourceName": "Manual official source collection",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectionMethod": "manual"
+    },
+    "transportLines": [
+      {
+        "id": "line-100",
+        "code": "100",
+        "slug": "100-centro-praia-grande",
+        "name": "Centro - Praia Grande",
+        "operator": "Verdes Mares",
+        "summary": "Linha urbana entre o Terminal Central e Praia Grande.",
+        "routeLabel": "Terminal Central -> Praia Grande",
+        "originLabel": "Terminal Central",
+        "destinationLabel": "Praia Grande",
+        "transportMode": "municipal",
+        "operationalStatus": "on-time",
+        "estimatedDurationMinutes": 28,
+        "distanceKm": 11.2,
+        "fareSummary": "Tarifa urbana municipal",
+        "color": "#0f766e",
+        "amenities": [
+          "acessivel"
+        ],
+        "sourceUpdatedAt": "2026-04-10T12:00:00.000Z",
+        "sourceLineRef": "100",
+        "isActive": true
+      },
+      {
+        "id": "ferry-fb-01",
+        "code": "FB-01",
+        "slug": "ferry-laranjeiras-vila-da-gloria",
+        "name": "Ferry Laranjeiras - Vila da Gloria",
+        "operator": "Ferry Boat Babitonga",
+        "summary": "Travessia publica entre Laranjeiras e Vila da Gloria.",
+        "routeLabel": "Laranjeiras -> Vila da Gloria",
+        "originLabel": "Laranjeiras",
+        "destinationLabel": "Vila da Gloria",
+        "transportMode": "ferry",
+        "operationalStatus": "on-time",
+        "estimatedDurationMinutes": 20,
+        "distanceKm": 4.3,
+        "fareSummary": "Pedestre R$ 3,20 · Carro R$ 24,00",
+        "color": "#0891b2",
+        "amenities": [
+          "hidroviario"
+        ],
+        "sourceUpdatedAt": "2026-04-10T12:00:00.000Z",
+        "sourceLineRef": "FB-01",
+        "isActive": true
+      }
+    ],
+    "routeDirections": [
+      {
+        "id": "line-100-outbound",
+        "lineId": "line-100",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Terminal Central -> Praia Grande",
+        "routeLabel": "Terminal Central -> Praia Grande",
+        "originLabel": "Terminal Central",
+        "destinationLabel": "Praia Grande",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      },
+      {
+        "id": "ferry-fb-01-outbound",
+        "lineId": "ferry-fb-01",
+        "type": "outbound",
+        "slug": "outbound",
+        "name": "Laranjeiras -> Vila da Gloria",
+        "routeLabel": "Laranjeiras -> Vila da Gloria",
+        "originLabel": "Laranjeiras",
+        "destinationLabel": "Vila da Gloria",
+        "sortOrder": 0,
+        "isLoop": false,
+        "sourceDirectionRef": "outbound"
+      }
+    ],
+    "stops": [
+      { "id": "stop-terminal-central", "name": "Terminal Central", "slug": "terminal-central", "latitude": -26.2429, "longitude": -48.6384 },
+      { "id": "stop-mercado-publico", "name": "Mercado Publico", "slug": "mercado-publico", "latitude": -26.2407, "longitude": -48.6348 },
+      { "id": "stop-enseada", "name": "Enseada", "slug": "enseada", "latitude": -26.2205, "longitude": -48.5903 },
+      { "id": "stop-praia-grande", "name": "Praia Grande", "slug": "praia-grande", "latitude": -26.2046, "longitude": -48.5409 },
+      { "id": "stop-trapiche-laranjeiras", "name": "Trapiche Laranjeiras", "slug": "trapiche-laranjeiras", "latitude": -26.2760, "longitude": -48.6728 },
+      { "id": "stop-trapiche-vila-da-gloria", "name": "Trapiche Vila da Gloria", "slug": "trapiche-vila-da-gloria", "latitude": -26.1791, "longitude": -48.7247 }
+    ],
+    "lineStops": [
+      { "id": "line-100-outbound-stop-1", "directionId": "line-100-outbound", "stopId": "stop-terminal-central", "sequence": 1, "isTimingPoint": true },
+      { "id": "line-100-outbound-stop-2", "directionId": "line-100-outbound", "stopId": "stop-mercado-publico", "sequence": 2, "isTimingPoint": false },
+      { "id": "line-100-outbound-stop-3", "directionId": "line-100-outbound", "stopId": "stop-enseada", "sequence": 3, "isTimingPoint": false },
+      { "id": "line-100-outbound-stop-4", "directionId": "line-100-outbound", "stopId": "stop-praia-grande", "sequence": 4, "isTimingPoint": true },
+      { "id": "ferry-fb-01-outbound-stop-1", "directionId": "ferry-fb-01-outbound", "stopId": "stop-trapiche-laranjeiras", "sequence": 1, "isTimingPoint": true },
+      { "id": "ferry-fb-01-outbound-stop-2", "directionId": "ferry-fb-01-outbound", "stopId": "stop-trapiche-vila-da-gloria", "sequence": 2, "isTimingPoint": true }
+    ],
+    "schedules": [
+      { "id": "line-100-outbound-weekday-0530", "directionId": "line-100-outbound", "serviceDay": "weekday", "departureTime": "05:30", "departureMinutes": 330, "isPeak": false, "occupancy": "medium" },
+      { "id": "line-100-outbound-weekday-0620", "directionId": "line-100-outbound", "serviceDay": "weekday", "departureTime": "06:20", "departureMinutes": 380, "isPeak": true, "occupancy": "high" }
+    ],
+    "stopTimePredictions": [],
+    "routePaths": [
+      { "id": "line-100-outbound-path-1", "directionId": "line-100-outbound", "sequence": 1, "latitude": -26.2429, "longitude": -48.6384 },
+      { "id": "line-100-outbound-path-2", "directionId": "line-100-outbound", "sequence": 2, "latitude": -26.2381, "longitude": -48.6261 },
+      { "id": "ferry-fb-01-outbound-path-1", "directionId": "ferry-fb-01-outbound", "sequence": 1, "latitude": -26.2760, "longitude": -48.6728 },
+      { "id": "ferry-fb-01-outbound-path-2", "directionId": "ferry-fb-01-outbound", "sequence": 2, "latitude": -26.2500, "longitude": -48.6880 }
+    ],
+    "fares": [
+      { "id": "fare-line-100-base", "lineId": "line-100", "label": "Tarifa urbana municipal", "currency": "BRL", "sortOrder": 0 },
+      { "id": "fare-ferry-fb-01-pedestrian", "lineId": "ferry-fb-01", "label": "Pedestre", "riderCategory": "pedestrian", "amountCents": 320, "currency": "BRL", "sortOrder": 0 },
+      { "id": "fare-ferry-fb-01-car", "lineId": "ferry-fb-01", "label": "Carro", "riderCategory": "car", "amountCents": 2400, "currency": "BRL", "sortOrder": 1 }
+    ],
+    "ferrySchedules": [
+      { "id": "ferry-fb-01-weekday-0700", "lineId": "ferry-fb-01", "directionId": "ferry-fb-01-outbound", "serviceDay": "weekday", "departureTime": "07:00", "departureMinutes": 420 },
+      { "id": "ferry-fb-01-weekday-0800", "lineId": "ferry-fb-01", "directionId": "ferry-fb-01-outbound", "serviceDay": "weekday", "departureTime": "08:00", "departureMinutes": 480 }
+    ],
+    "ferryFares": [
+      { "id": "fare-ferry-fb-01-pedestrian", "lineId": "ferry-fb-01", "label": "Pedestre", "riderCategory": "pedestrian", "amountCents": 320, "currency": "BRL", "sortOrder": 0 },
+      { "id": "fare-ferry-fb-01-car", "lineId": "ferry-fb-01", "label": "Carro", "riderCategory": "car", "amountCents": 2400, "currency": "BRL", "sortOrder": 1 }
+    ]
+  }
+}

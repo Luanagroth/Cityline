@@ -1,0 +1,836 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "verdes-mares",
+  "entityType": "line",
+  "data": {
+    "id": "collected-line-0100",
+    "code": "0100",
+    "slug": "0100-enseada-via-ubatuba",
+    "name": "Enseada via Ubatuba",
+    "operator": "Verdes Mares",
+    "mode": "urban",
+    "summary": "Linha Centro - Enseada via Ubatuba",
+    "routeLabel": "Centro -> Enseada",
+    "originLabel": "Centro",
+    "destinationLabel": "Enseada",
+    "collectionStatus": "reviewed",
+    "fares": [
+      {
+        "id": "collected-line-0100-fare-1",
+        "label": "Tarifa urbana municipal",
+        "appliesTo": "line",
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0100"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-line-0100-outbound",
+        "type": "outbound",
+        "name": "Saída do Centro",
+        "routeLabel": "Centro -> Enseada",
+        "originLabel": "Centro",
+        "destinationLabel": "Enseada",
+        "mapPath": [],
+        "stops": [
+          {
+            "id": "collected-line-0100-outbound-stop-1",
+            "name": "Praça Dr. Getúlio Vargas",
+            "sequence": 1,
+            "location": { "lat": 0, "lng": 0 },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-2",
+            "name": "Ogmo SFS",
+            "sequence": 2,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-3",
+            "name": "Antiga Multipaper (Sentido Centro/Bairro)",
+            "sequence": 3,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-4",
+            "name": "Carioca (Bica d'água)",
+            "sequence": 4,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-5",
+            "name": "Colégio Adventista",
+            "sequence": 5,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-6",
+            "name": "Restaurante Tom Brasil",
+            "sequence": 6,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-7",
+            "name": "Rodoviária Velha",
+            "sequence": 7,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-8",
+            "name": "Millium",
+            "sequence": 8,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-9",
+            "name": "Colégio Santa Catarina, Rua Barão do Rio Branco 730",
+            "sequence": 9,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-10",
+            "name": "Igreja Quadrangular (antigo Super 10)",
+            "sequence": 10,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-11",
+            "name": "Auto Escola São Francisco",
+            "sequence": 11,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-12",
+            "name": "Viação Verdes Mares",
+            "sequence": 12,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-13",
+            "name": "Antiga Souza Vidal",
+            "sequence": 13,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-14",
+            "name": "Borracharia do Eldo",
+            "sequence": 14,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-15",
+            "name": "Gelo da Ilha",
+            "sequence": 15,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-16",
+            "name": "Polimix",
+            "sequence": 16,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-17",
+            "name": "Padaria KM 1,5",
+            "sequence": 17,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-18",
+            "name": "EM Franklin de Oliveira (Sentido Centro/Bairro)",
+            "sequence": 18,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-19",
+            "name": "Antes do Rocha",
+            "sequence": 19,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-20",
+            "name": "Porto Seco Rocha (Sentido Centro/Bairro)",
+            "sequence": 20,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-21",
+            "name": "KM 3 (Sentido Centro/Bairro)",
+            "sequence": 21,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-22",
+            "name": "Pró-Ilha",
+            "sequence": 22,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-23",
+            "name": "Associação do Porto (Sentido Centro/Bairro)",
+            "sequence": 23,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-24",
+            "name": "Posto Mediterrâneo (Centro/Bairro)",
+            "sequence": 24,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-25",
+            "name": "Próximo a Univille (Centro/Bairro)",
+            "sequence": 25,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-26",
+            "name": "EM João Dias",
+            "sequence": 26,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-27",
+            "name": "Rua Rodovia Duque de Caxias, 8111",
+            "sequence": 27,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-28",
+            "name": "Peixaria do Pedrinho",
+            "sequence": 28,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-29",
+            "name": "Mercado Palhares",
+            "sequence": 29,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-30",
+            "name": "Lajes Ubatuba (Centro/Bairro)",
+            "sequence": 30,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-31",
+            "name": "Posto Ká Brasil",
+            "sequence": 31,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-32",
+            "name": "Mercado Bona (Centro/Bairro)",
+            "sequence": 32,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-33",
+            "name": "Estrada do Forte 1",
+            "sequence": 33,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-34",
+            "name": "Estrada do Forte, 630",
+            "sequence": 34,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-35",
+            "name": "Estrada do Forte 3",
+            "sequence": 35,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-36",
+            "name": "Gustavo Vogelsanger 1",
+            "sequence": 36,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-37",
+            "name": "Av. Bogotá 1",
+            "sequence": 37,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-38",
+            "name": "Av. Bogotá 2",
+            "sequence": 38,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-39",
+            "name": "Secretaria de Obras das Praias (Sentido Centro/Bairro)",
+            "sequence": 39,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-40",
+            "name": "Av. Bogotá 4 (Próximo FT)",
+            "sequence": 40,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-41",
+            "name": "Antiga Reinert Mat. Construção",
+            "sequence": 41,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-42",
+            "name": "Multipraia Society",
+            "sequence": 42,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-43",
+            "name": "Próximo Rua Armazém",
+            "sequence": 43,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-44",
+            "name": "Ubatuba Bebidas",
+            "sequence": 44,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-45",
+            "name": "Próximo Contabilidade Enseada",
+            "sequence": 45,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-46",
+            "name": "Entrada Rua Felipe Musse",
+            "sequence": 46,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-47",
+            "name": "Pizzaria Kanto da Pizza",
+            "sequence": 47,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-48",
+            "name": "Mercado Pato Branco",
+            "sequence": 48,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-49",
+            "name": "Aquamires",
+            "sequence": 49,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-50",
+            "name": "Santa Catarina 3",
+            "sequence": 50,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-51",
+            "name": "Santa Catarina 4",
+            "sequence": 51,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-52",
+            "name": "Fundos Hotel Fragata",
+            "sequence": 52,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-outbound-stop-53",
+            "name": "Ponto Final Enseada",
+            "sequence": 53,
+            "location": { "lat": 0, "lng": 0 },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0100-outbound-weekday-0520",
+            "serviceDay": "weekday",
+            "departureTime": "05:20",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-0745",
+            "serviceDay": "weekday",
+            "departureTime": "07:45",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-1030",
+            "serviceDay": "weekday",
+            "departureTime": "10:30",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-1610",
+            "serviceDay": "weekday",
+            "departureTime": "16:10",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-1705",
+            "serviceDay": "weekday",
+            "departureTime": "17:05",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-1735",
+            "serviceDay": "weekday",
+            "departureTime": "17:35",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-2015",
+            "serviceDay": "weekday",
+            "departureTime": "20:15",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-2115",
+            "serviceDay": "weekday",
+            "departureTime": "21:15",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-outbound-weekday-2300",
+            "serviceDay": "weekday",
+            "departureTime": "23:00",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0100",
+          "sourceDirectionRef": "outbound"
+        }
+      },
+      {
+        "id": "collected-line-0100-inbound",
+        "type": "inbound",
+        "name": "Saída da Enseada",
+        "routeLabel": "Enseada -> Centro",
+        "originLabel": "Enseada",
+        "destinationLabel": "Centro",
+        "mapPath": [],
+        "stops": [
+          {
+            "id": "collected-line-0100-inbound-stop-1",
+            "name": "Ponto Final Enseada",
+            "sequence": 1,
+            "location": { "lat": 0, "lng": 0 },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-2",
+            "name": "Fundos Hotel Fragata",
+            "sequence": 2,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-3",
+            "name": "Santa Catarina 4",
+            "sequence": 3,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-4",
+            "name": "Santa Catarina 3",
+            "sequence": 4,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-5",
+            "name": "Aquamires",
+            "sequence": 5,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-6",
+            "name": "Mercado Pato Branco",
+            "sequence": 6,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-7",
+            "name": "Pizzaria Kanto da Pizza",
+            "sequence": 7,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-8",
+            "name": "Entrada Rua Felipe Musse",
+            "sequence": 8,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-9",
+            "name": "Próximo Contabilidade Enseada",
+            "sequence": 9,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-10",
+            "name": "Ubatuba Bebidas",
+            "sequence": 10,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-11",
+            "name": "Próximo Rua Armazém",
+            "sequence": 11,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-12",
+            "name": "Multipraia Society",
+            "sequence": 12,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-13",
+            "name": "Antiga Reinert Mat. Construção",
+            "sequence": 13,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-14",
+            "name": "Av. Bogotá 4 (Próximo FT)",
+            "sequence": 14,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-15",
+            "name": "Secretaria de Obras das Praias (Sentido Centro/Bairro)",
+            "sequence": 15,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-16",
+            "name": "Av. Bogotá 2",
+            "sequence": 16,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-17",
+            "name": "Av. Bogotá 1",
+            "sequence": 17,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-18",
+            "name": "Gustavo Vogelsanger 1",
+            "sequence": 18,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-19",
+            "name": "Estrada do Forte 3",
+            "sequence": 19,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-20",
+            "name": "Estrada do Forte, 630",
+            "sequence": 20,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-21",
+            "name": "Estrada do Forte 1",
+            "sequence": 21,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-22",
+            "name": "Mercado Bona (Centro/Bairro)",
+            "sequence": 22,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-23",
+            "name": "Posto Ká Brasil",
+            "sequence": 23,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-24",
+            "name": "Lajes Ubatuba (Centro/Bairro)",
+            "sequence": 24,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-25",
+            "name": "Mercado Palhares",
+            "sequence": 25,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-26",
+            "name": "Peixaria do Pedrinho",
+            "sequence": 26,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-27",
+            "name": "Rua Rodovia Duque de Caxias, 8111",
+            "sequence": 27,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-28",
+            "name": "EM João Dias",
+            "sequence": 28,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-29",
+            "name": "Próximo a Univille (Centro/Bairro)",
+            "sequence": 29,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-30",
+            "name": "Posto Mediterrâneo (Centro/Bairro)",
+            "sequence": 30,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-31",
+            "name": "Associação do Porto (Sentido Centro/Bairro)",
+            "sequence": 31,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-32",
+            "name": "Pró-Ilha",
+            "sequence": 32,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-33",
+            "name": "KM 3 (Sentido Centro/Bairro)",
+            "sequence": 33,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-34",
+            "name": "Porto Seco Rocha (Sentido Centro/Bairro)",
+            "sequence": 34,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-35",
+            "name": "Antes do Rocha",
+            "sequence": 35,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-36",
+            "name": "EM Franklin de Oliveira (Sentido Centro/Bairro)",
+            "sequence": 36,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-37",
+            "name": "Padaria KM 1,5",
+            "sequence": 37,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-38",
+            "name": "Polimix",
+            "sequence": 38,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-39",
+            "name": "Gelo da Ilha",
+            "sequence": 39,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-40",
+            "name": "Borracharia do Eldo",
+            "sequence": 40,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-41",
+            "name": "Antiga Souza Vidal",
+            "sequence": 41,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-42",
+            "name": "Viação Verdes Mares",
+            "sequence": 42,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-43",
+            "name": "Auto Escola São Francisco",
+            "sequence": 43,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-44",
+            "name": "Igreja Quadrangular (antigo Super 10)",
+            "sequence": 44,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-45",
+            "name": "Colégio Santa Catarina, Rua Barão do Rio Branco 730",
+            "sequence": 45,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-46",
+            "name": "Millium",
+            "sequence": 46,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-47",
+            "name": "Rodoviária Velha",
+            "sequence": 47,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-48",
+            "name": "Restaurante Tom Brasil",
+            "sequence": 48,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-49",
+            "name": "Colégio Adventista",
+            "sequence": 49,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-50",
+            "name": "Carioca (Bica d'água)",
+            "sequence": 50,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-51",
+            "name": "Antiga Multipaper (Sentido Bairro/Centro)",
+            "sequence": 51,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-52",
+            "name": "Ogmo SFS",
+            "sequence": 52,
+            "location": { "lat": 0, "lng": 0 }
+          },
+          {
+            "id": "collected-line-0100-inbound-stop-53",
+            "name": "Praça Dr. Getúlio Vargas",
+            "sequence": 53,
+            "location": { "lat": 0, "lng": 0 },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-0100-inbound-weekday-0600",
+            "serviceDay": "weekday",
+            "departureTime": "06:00",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-0645",
+            "serviceDay": "weekday",
+            "departureTime": "06:45",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-0805",
+            "serviceDay": "weekday",
+            "departureTime": "08:05",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-1145",
+            "serviceDay": "weekday",
+            "departureTime": "11:45",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-1530",
+            "serviceDay": "weekday",
+            "departureTime": "15:30",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-1855",
+            "serviceDay": "weekday",
+            "departureTime": "18:55",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-1935",
+            "serviceDay": "weekday",
+            "departureTime": "19:35",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-2115",
+            "serviceDay": "weekday",
+            "departureTime": "21:15",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-0100-inbound-weekday-2359",
+            "serviceDay": "weekday",
+            "departureTime": "23:59",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "0100",
+          "sourceDirectionRef": "inbound"
+        }
+      }
+    ],
+    "source": {
+      "sourceId": "verdes-mares-sfs",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectedAt": "2026-04-10T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "0100"
+    }
+  }
+}

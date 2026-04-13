@@ -1,0 +1,120 @@
+{
+  "manifestVersion": "1.0",
+  "citySlug": "sao-francisco-do-sul",
+  "providerSlug": "verdes-mares",
+  "entityType": "line",
+  "data": {
+    "id": "collected-line-100",
+    "code": "100",
+    "slug": "100-centro-praia-grande",
+    "name": "Centro - Praia Grande",
+    "operator": "Verdes Mares",
+    "mode": "urban",
+    "summary": "Linha urbana entre o Terminal Central e Praia Grande.",
+    "routeLabel": "Terminal Central -> Praia Grande",
+    "originLabel": "Terminal Central",
+    "destinationLabel": "Praia Grande",
+    "color": "#0f766e",
+    "estimatedDurationMinutes": 28,
+    "distanceKm": 11.2,
+    "fares": [
+      {
+        "id": "collected-line-100-fare-1",
+        "label": "Tarifa urbana municipal",
+        "appliesTo": "line",
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "100"
+        }
+      }
+    ],
+    "directions": [
+      {
+        "id": "collected-line-100-outbound",
+        "type": "outbound",
+        "name": "Terminal Central -> Praia Grande",
+        "routeLabel": "Terminal Central -> Praia Grande",
+        "originLabel": "Terminal Central",
+        "destinationLabel": "Praia Grande",
+        "mapPath": [
+          { "sequence": 1, "lat": -26.2429, "lng": -48.6384 },
+          { "sequence": 2, "lat": -26.2381, "lng": -48.6261 },
+          { "sequence": 3, "lat": -26.2303, "lng": -48.6110 },
+          { "sequence": 4, "lat": -26.2205, "lng": -48.5903 },
+          { "sequence": 5, "lat": -26.2124, "lng": -48.5651 },
+          { "sequence": 6, "lat": -26.2046, "lng": -48.5409 }
+        ],
+        "stops": [
+          {
+            "id": "collected-stop-100-1",
+            "name": "Terminal Central",
+            "sequence": 1,
+            "location": { "lat": -26.2429, "lng": -48.6384 },
+            "isTimingPoint": true
+          },
+          {
+            "id": "collected-stop-100-2",
+            "name": "Mercado Publico",
+            "sequence": 2,
+            "location": { "lat": -26.2407, "lng": -48.6348 }
+          },
+          {
+            "id": "collected-stop-100-3",
+            "name": "Enseada",
+            "sequence": 3,
+            "location": { "lat": -26.2205, "lng": -48.5903 }
+          },
+          {
+            "id": "collected-stop-100-4",
+            "name": "Praia Grande",
+            "sequence": 4,
+            "location": { "lat": -26.2046, "lng": -48.5409 },
+            "isTimingPoint": true
+          }
+        ],
+        "departures": [
+          {
+            "id": "collected-line-100-weekday-0530",
+            "serviceDay": "weekday",
+            "departureTime": "05:30",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-100-weekday-0620",
+            "serviceDay": "weekday",
+            "departureTime": "06:20",
+            "stopPredictions": []
+          },
+          {
+            "id": "collected-line-100-weekday-0720",
+            "serviceDay": "weekday",
+            "departureTime": "07:20",
+            "stopPredictions": []
+          }
+        ],
+        "source": {
+          "sourceId": "verdes-mares-sfs",
+          "sourceName": "Verdes Mares Sao Francisco do Sul",
+          "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+          "collectedAt": "2026-04-10T12:00:00.000Z",
+          "collectionMethod": "manual",
+          "sourceLineRef": "100",
+          "sourceDirectionRef": "outbound"
+        }
+      }
+    ],
+    "collectionStatus": "reviewed",
+    "source": {
+      "sourceId": "verdes-mares-sfs",
+      "sourceName": "Verdes Mares Sao Francisco do Sul",
+      "sourceUrl": "https://vmares.com.br/sao-francisco-do-sul/",
+      "collectedAt": "2026-04-10T12:00:00.000Z",
+      "collectionMethod": "manual",
+      "sourceLineRef": "100"
+    }
+  }
+}
