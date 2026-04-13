@@ -295,8 +295,6 @@ export const normalizedTransportDatasetExample: NormalizedTransportDataset = {
   ],
   fares: [
     { id: 'fare-line-100-base', lineId: 'line-100', label: 'Tarifa urbana municipal', currency: 'BRL', sortOrder: 0 },
-    { id: 'fare-ferry-01-pedestrian', lineId: 'ferry-01', label: 'Pedestre', riderCategory: 'pedestrian', amountCents: 320, currency: 'BRL', sortOrder: 0 },
-    { id: 'fare-ferry-01-car', lineId: 'ferry-01', label: 'Carro', riderCategory: 'car', amountCents: 2400, currency: 'BRL', sortOrder: 1 },
   ],
   ferrySchedules: [
     { id: 'ferry-01-weekday-0700', lineId: 'ferry-01', directionId: 'ferry-01-outbound', serviceDay: 'weekday', departureTime: '07:00', departureMinutes: 420 },
